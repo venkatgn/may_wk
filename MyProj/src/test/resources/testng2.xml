@@ -11,4 +11,9 @@
              <class name="p1.Test_prog"/>              
         </classes>
     </test>   -->
+    <listeners>
+<listener class-name="atu.testng.reports.listeners.ATUReportsListener"/>
+<listener class-name="atu.testng.reports.listeners.ConfigurationListener"/>
+<listener class-name="atu.testng.reports.listeners.MethodListener"/>
+</listeners>
  </suite>

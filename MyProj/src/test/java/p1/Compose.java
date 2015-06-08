@@ -4,12 +4,21 @@ package p1;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
+
+import atu.testng.reports.listeners.ATUReportsListener;
+import atu.testng.reports.listeners.ConfigurationListener;
+import atu.testng.reports.listeners.MethodListener;
 
 
+@Listeners({ ATUReportsListener.class, ConfigurationListener.class,
+MethodListener.class })
 public class Compose 
 {
 		
-  
+	{
+		System.setProperty("atu.reporter.config", "E:\\betasoft6\\Myproj\\atu.properties");
+	}
 	
   WebDriver driver;
   public Compose(WebDriver driver)
